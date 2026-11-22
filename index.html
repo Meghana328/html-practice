@@ -1,70 +1,96 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MY FIRST WEB PAGE</title>
+        <title>Hi I'm konduru Meghana</title>
+        <style>
+            nav{
+                display:flex;
+                gap:30px;
+                align-items:center;
+                padding:15px;
+            }
+            nav h2{
+                margin-right:auto;
+                font-size:30px;
+                color:green;
+            }
+            .main img{
+                width:220px;
+                height:220px;
+                border-radius:50%;
+                object-fit:cover;
+                border:4px solid lightgreen;
+            }
+            .main{
+                text-align:center;
+                margin-top:40px;
+                padding:20px;
+            }
+            .main button{
+                background-color:green;
+                color:white;
+                border:none;
+                padding:16px 30px;
+                border-radius:8px;
+                cursor:pointer;
+                margin:10px;
+                font-size:18px;
+            }
+            .main h1{
+                font-size:52px;
+            }
+            .main p {
+                font-size:25px;
+                color: gray;
+                width:100%;
+                margin: 10px 0;
+                line-height: 1.6;
+            }
+            .main button:hover {
+                background-color:darkgreen;
+            }
+            nav a{
+                text-decoration:none;
+                color:black;
+                font-size:20px;
+            }
+            nav a:hover {
+                color: gray;
+            }
+            .main h1 span{
+                color:green;
+            }
+            body{
+                background-color:#f5fff5;
+            }
+            .main button.secondary {
+                background-color: white;
+                color: green;
+                border: 2px solid green;
+            }
+            .intro {
+                width: 55%;
+                margin: auto;
+                text-align: left;
+            }
+        </style>
     </head>
         <body>
-          <form>
-            <h1>WELCOME TO MY PAGE</h1>
-            <p>i am learning HTML</p>
-            <h2>MY SKILLS</h2>
-            <ul>
-                <li>python</li>
-                <li>sql</li>
-                <li>HTML</li>
-            </ul>
-            <a href="https://www.google.com/"target="_blank">visit google</a>
-            <br>
-            <img src="https://media.istockphoto.com/id/1356364287/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-backlit-keyboard-screens-show.jpg?s=2048x2048&w=is&k=20&c=bg3j_lxg8rjaW1vvargY4NBY5nb3pkwYTkxOu3tuJDU=" alt="image" width="300">
-            <br><br>
-            <table border="1">
-                <tr>
-                    <th>name</th>
-                    <th>age</th>
-                    <th>course</th>
-                </tr>
-                <tr>
-                    <td>meghana</td>
-                    <td>21</td>
-                    <td>python</td>
-                </tr>
-                <tr>
-                    <td>anusha</td>
-                    <td>22</td>
-                    <td>sql</td>
-                </tr>
-            </table>
-            <br>
-            <label for="username">Username:</label>
-            <input type="text" id="username">
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password">
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-            <br><br>
-            <label for="age">Age:</label>
-            <input type="number" id="age">
-            <br><br>
-            <label>Choose Gender:</label>
-            <label for="male">Male:</label>
-            <input type="radio" id="male" name="gender">
-            <label for="female">Female:</label>
-            <input type="radio" id="female" name="gender">
-            <br><br>
-            <label>choose course:</label>
-            <select>
-                <option>Python</option>
-                <option>SQL</option>
-                <option>HTML</option>
-            </select>
-            <br><br>
-            <label for="address">Adress:</label>
-            <br>
-            <textarea id="address"></textarea>
-            <br><br>
-            <button>Submit</button>
-          </form>
+            <nav>
+                <h2>Konduru Meghana</h2>
+                <a href="#">Home</a>
+                <a href="#">Blogs</a>
+                <a href="#">Bio</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="main">
+                <img src="profile.jpeg" alt="My Profile">
+                <div class="intro">
+                <h1>Hi I'm <span>Konduru Meghana</span></h1>
+                <p>Aspiring Python Full Stack Developer passionate about creating useful web applications</p>
+                <button>Get in Touch</button>
+                <button class="secondary">Read My Blog</button>
+                </div>
+            </div>
         </body>
 </html>
